@@ -45,7 +45,7 @@
     # beware of the edge conditions. 
     #   for the last record exit the loop.
     # compare the values and store the minimum increase and month in two different variables for results printing 
-
+# adding comment
 
 
 
