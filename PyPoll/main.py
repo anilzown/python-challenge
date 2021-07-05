@@ -75,12 +75,13 @@ print("-------------------------\n")
 reportFile.write("----------------------------")
 reportFile.write("\r\n")
 
-
 print(f"Winner: {candidateSet[candiateVotes.index(max(candiateVotes))]}")
 reportFile.write(f"Winner: {candidateSet[candiateVotes.index(max(candiateVotes))]}")
+reportFile.write("\r\n")
+
 print("-------------------------\n")
 reportFile.write("----------------------------")
-reportFile.write("\r\n")
+
 
 
 
