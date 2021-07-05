@@ -5,6 +5,10 @@
 #The greatest increase in profits (date and amount) over the entire period
 #The greatest decrease in losses (date and amount) over the entire period
 
+import os
+import csv
+
+csvpath=os.path.join('.','Resources','election_data.csv')
 
 #Script 1
 #The total number of months included in the dataset the data set is in the resources folder, 
@@ -13,8 +17,13 @@
 # loop for each row
 # increament the counter to count the number of months.
 # print the total count.
-
-
+electionMonths = []
+with open (csvpath) as csvfile:
+    csvreader= csv.reader(csvfile,delimiter=',')
+    
+    csv_header=next(csvreader)
+    for electionRecord in csvreader:
+        electionMonthArr.append(relectionRecord[])
 
 #Script 2
 #The net total amount of "Profit/Losses" over the entire period
